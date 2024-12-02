@@ -121,7 +121,7 @@ input:focus {
   }
 
   input {
-    width: 60vw; 
+    width: 60vw !important; 
   }
 }
 
