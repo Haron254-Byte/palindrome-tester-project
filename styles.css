@@ -1,0 +1,127 @@
+body {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(255, 107, 146, 0.8), rgba(117, 150, 255, 0.8));
+  font-family: 'Roboto', sans-serif; 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; 
+}
+
+
+.info {
+  padding: 20px;
+  width: 35vw;
+  background: linear-gradient(135deg, rgba(255, 170, 170, 0.9), rgba(255, 120, 120, 0.7)); 
+  border-radius: 20px;
+  margin: 15px auto;
+  color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
+#result-box {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  margin: 20px auto;
+  width: 35vw;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  color: #333;
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+#result-box:hover {
+  transform: translateY(-10px);
+}
+
+#result-box p {
+  margin-top: 15px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+
+h1, h3, button, p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700; 
+}
+
+h3 {
+  font-size: 1.7rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+
+button {
+  background: linear-gradient(135deg, #00d4d3, #00d4d3); 
+  border-radius: 15px;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 35vw; 
+  margin-top: 30px;
+}
+
+button:hover {
+  background: linear-gradient(135deg,#00b1a1,rgba(117, 150, 255, 0.8)); 
+  transform: scale(1.05);
+}
+
+
+input {
+  width: 25vw;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #ff5f73;
+  font-size: 1.4rem;
+  padding: 10px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+  margin-top: 20px;
+}
+
+input:focus {
+  border-color: #00d4d3;
+  box-shadow: 0 0 8px rgba(0, 212, 211, 0.7); 
+}
+
+@media (max-width: 600px) {
+  .info, #result-box, button, input {
+    width: 85vw; 
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 85vw;
+  }
+
+  input {
+    width: 85vw; 
+  }
+}
+
