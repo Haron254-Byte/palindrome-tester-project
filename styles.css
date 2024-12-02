@@ -104,7 +104,7 @@ input:focus {
 }
 
 @media (max-width: 600px) {
-  .info, #result-box, button, input {
+  .info, #result-box, button {
     width: 85vw; 
   }
 
